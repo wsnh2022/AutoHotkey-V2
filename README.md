@@ -14,6 +14,7 @@ Are you tired of repetitive tasks eating away your precious time? Say hello to t
 
 ![SelectedText Smart Menu Action](https://imgur.com/a/Vyhnmm4)
 ![hai](https://imgur.com/YEphdxv)
+![hai](https://imgur.com/a/selectedtext-smart-menu-action-Vyhnmm4)
 
 ## 🌟 Features That Will Make You Go Wow!
 
