@@ -656,9 +656,10 @@ CopyFileContent() {
         if (FileExist(A_Clipboard)) {
             try {
                 fileContent := FileRead(A_Clipboard)
+                ;; MsgBox fileContent
+                A_Clipboard := fileContent
                 ToolTip("File content copied to clipboard successfully.")
                 SetTimer(() => ToolTip(), -5000)  ; Hides the tooltip after 2 seconds
-                MsgBox fileContent
             } catch as err {
                 MsgBox "Error reading file: " . err.Message
             }
