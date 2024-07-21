@@ -669,7 +669,6 @@ CopyFileContent() {
     } else {
         MsgBox "No content was copied to the clipboard."
     }
-    Reload
 }
 
 ;;================= ˅˅˅˅ news functions ˅˅˅˅ ==============
