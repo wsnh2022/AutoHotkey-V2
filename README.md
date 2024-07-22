@@ -31,13 +31,13 @@ Are you tired of repetitive tasks eating away your precious time? Say hello to t
 1. **Prep**: Make sure you have [AutoHotkey v2](https://www.autohotkey.com/) installed.
 2. **Grab**: Clone this repo or download the script.
 3. **Launch**: Double-click the script or add it to your startup folder.
-4. **Enjoy**: Press `End` and watch the magic unfold!
+4. **Enjoy**: Press `middle Mouse Click` or `Windowskey + w` and watch the magic unfold!
 
 ## 🎹 Hotkeys to Supercharge Your Workflow
 
 | Hotkey | Action |
 |--------|--------|
-| `End` | Open the productivity powerhouse menu |
+| `middle Mouse Click` or `Windowskey + w` | Open the productivity powerhouse menu |
 | `Alt + L` | Lowercase selected text |
 | `Alt + U` | UPPERCASE selected text |
 | `Alt + T` | Title Case Selected Text |
