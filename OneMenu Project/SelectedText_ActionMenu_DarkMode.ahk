@@ -32,11 +32,25 @@ news.Add('Financial News',(*)=>Financial_News())
 news.Add('Science News',(*)=>Science_News())
 
 Web_Search := Menu()
-Web_Search.Add('Google',(*)=> Run("https://google.com/search?q=" . A_Clipboard))
+Web_Search.Add('Google`tAlt+g',(*)=> google_search())
 Web_Search.Add('News',(*)=> Run("https://news.google.com/search?q=" . A_Clipboard . "&hl=en-IN&gl=IN&ceid=IN%3Aen" . A_Clipboard))
-Web_Search.Add('Youtube',(*)=> Run('https://www.youtube.com/results?search_query=' . A_Clipboard))
-Web_Search.Add('Google Maps',(*)=> Run('https://www.google.com/maps/search/' . A_Clipboard))
+Web_Search.Add('Youtube`tAlt+y',(*)=> yt_search() )
+Web_Search.Add('Google Maps`tAlt+m',(*)=> maps())
 Web_Search.Add('Find in Social Media',(*)=> Social_Media())
+
+google_search(){
+    Run("https://google.com/search?q=" . A_Clipboard)
+}
+yt_search(){
+    Run('https://www.youtube.com/results?search_query=' . A_Clipboard)
+}
+maps(){
+    Run('https://www.google.com/maps/search/' . A_Clipboard)
+}
+
+!g::google_search()
+!y::yt_search()
+!m::maps()
 
 ; Create and populate the format submenu
 formatMenu := Menu()
@@ -109,12 +123,7 @@ OneMenu.Add()
 OneMenu.Add("System", Systemapps)
 OneMenu.Add("Daily_Tools", Daily_Tools)
 
-
 ;;===========================================================================
-
-; OneMenu.SetColor("ffffff")
-
-
 ; Hotkey to show the main menu
 MButton::callmenu()
 #w::callmenu()
@@ -802,7 +811,7 @@ Toys_Baby_Products(){
 }
 
 ;;================= ^^^^ Online shopping search functions ^^^^ ==============
-;; got the dark mode solution from https://www.reddit.com/user/DepthTrawler/ thankful to DepthTrawler
+;; got the dark mode solution from https://www.reddit.com/user/DepthTrawler/
 SetPreferredAppMode()
 ; Build the menu, then call FlushMenuThemes
 FlushMenuThemes()
