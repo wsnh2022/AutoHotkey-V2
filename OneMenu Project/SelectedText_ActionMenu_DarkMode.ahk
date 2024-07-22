@@ -802,7 +802,7 @@ Toys_Baby_Products(){
 }
 
 ;;================= ^^^^ Online shopping search functions ^^^^ ==============
-
+;; got the dark mode solution from https://www.reddit.com/user/DepthTrawler/ thankful to DepthTrawler
 SetPreferredAppMode()
 ; Build the menu, then call FlushMenuThemes
 FlushMenuThemes()
