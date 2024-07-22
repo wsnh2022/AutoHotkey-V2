@@ -1,12 +1,12 @@
 #Warn
 #Requires AutoHotkey v2.0+
 #SingleInstance Force
-if (!A_IsCompiled && !InStr(A_AhkPath, "_UIA")) {
-    Run "*UIAccess " A_ScriptFullPath
-    ExitApp 0
-}
+;if (!A_IsCompiled && !InStr(A_AhkPath, "_UIA")) {
+;    Run "*UIAccess " A_ScriptFullPath
+;    ExitApp 0
+;}
 ~!Space::Reload
-Escape::Exit
+Escape::Exitapp
 ;;========================
 
 
@@ -112,7 +112,10 @@ OneMenu.Add("Daily_Tools", Daily_Tools)
 ; OneMenu.SetColor("ffffff")
 
 ; Hotkey to show the main menu
-End::{
+;End::{
+MButton::
+#w::
+{
     A_Clipboard := ""
     Send "^c"
     ClipWait 1
