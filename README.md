@@ -10,6 +10,7 @@ AutoHotkey Version 2 Scripts are located here
 
 Are you tired of repetitive tasks eating away your precious time? Say hello to the SuperCharged Productivity Suite - your all-in-one solution for turbocharging your Windows workflow!
 
+![OneMenu_darkv2 ahk](https://github.com/user-attachments/assets/c422e2e6-06b2-43c0-902c-ab40cee14756)
 [![YouTube Shorts Video](https://img.youtube.com/vi/aagzxVRo4I0/0.jpg)](https://www.youtube.com/shorts/aagzxVRo4I0)
 
 ## 🌟 Features That Will Make You Go Wow!
