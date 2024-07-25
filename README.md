@@ -69,7 +69,6 @@ Compare product prices and details across major e-commerce platforms in various 
 ### 💬 WhatsApp Integration
 Send WhatsApp messages directly from your desktop, even to unsaved numbers.
 
-These emojis add a visual element to your menu, making it more engaging and easier to navigate at a glance. Each emoji is chosen to represent the function of its respective section.
 ## 👥 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
