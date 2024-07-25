@@ -1,104 +1,101 @@
 # AutoHotkey-V2
 AutoHotkey Version 2 Scripts are located here
 
-# 🚀 SuperCharged Productivity Suite
+# 🚀 AutoHotkey Productivity Suite - SELECTED TEXT ACTION MENU 
 
-> Unleash the power of automation with this feature-packed AutoHotkey v2 script!
-
-[![AHK Version](https://img.shields.io/badge/AHK-v2.0%2B-brightgreen)](https://www.autohotkey.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Are you tired of repetitive tasks eating away your precious time? Say hello to the SuperCharged Productivity Suite - your all-in-one solution for turbocharging your Windows workflow!
+Supercharge your Windows workflow with this comprehensive AutoHotkey script. Designed to boost productivity and streamline daily tasks, this suite offers a range of powerful features accessible through an intuitive menu system.
 
 ![OneMenu_darkv2 ahk](https://github.com/user-attachments/assets/c422e2e6-06b2-43c0-902c-ab40cee14756)
+
+## 🎥 Quick Demo
+
+Check out this short video demonstration of the Productivity Suite in action:
+
 [![YouTube Shorts Video](https://img.youtube.com/vi/aagzxVRo4I0/0.jpg)](https://www.youtube.com/shorts/aagzxVRo4I0)
 
-## 🌟 Features That Will Make You Go Wow!
+## 📋 Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Key Functions](#key-functions)
+- [Contributing](#contributing)
+- [License](#license)
 
-- 🎯 **One-Key Wonder**: Access a world of functions with just the `End` key
-- ✍️ **Text Transformer**: Manipulate text like a pro (case conversion, wrapping, spacing fixes)
-- 🔍 **Search Savant**: Scour the web across multiple platforms in seconds
-- 🛒 **Shop Smart**: Find the best deals with multi-platform product searches
-- 📰 **News Ninja**: Stay informed with customized news searches
-- 🔐 **Fort Knox**: Generate fortress-strong passwords on demand
-- 🧮 **Math Magician**: Crunch percentages faster than you can say "calculator"
-- 💬 **WhatsApp Wizard**: Send messages without touching your phone
-- 🤖 **AI Ally**: Harness the power of ChatGPT for various text tasks
-- 🖥️ **System Sidekick**: Quick access to system tools and bulk file operations
+## ✨ Features
 
-## 🚀 Quick Start
+- 🖱️ Easily accessible menu via middle mouse click or Win+W
+- 🌐 Integrated web search capabilities
+- 🤖 AI-powered text enhancement with ChatGPT integration
+- 📊 Multi-source news aggregation
+- 🛒 Cross-platform shopping comparison
+- 📁 Bulk file and folder operations
+- 💬 Desktop WhatsApp integration
+- ⌨️ Customizable hotkeys for quick actions
 
-1. **Prep**: Make sure you have [AutoHotkey v2](https://www.autohotkey.com/) installed.
-2. **Grab**: Clone this repo or download the script.
-3. **Launch**: Double-click the script or add it to your startup folder.
-4. **Enjoy**: Press `middle Mouse Click` or `Windowskey + w` and watch the magic unfold!
+## 🛠️ Installation
 
-## 🎹 Hotkeys to Supercharge Your Workflow
+1. Ensure you have [AutoHotkey v2.0+](https://www.autohotkey.com/) installed on your system.
+2. Clone this repository or download the script file:
+   ```
+   git clone https://github.com/yourusername/autohotkey-productivity-suite.git
+   ```
+3. Double-click the `.ahk` file to run the script.
 
-| Hotkey | Action |
-|--------|--------|
-| `middle Mouse Click` or `Windowskey + w` | Open the productivity powerhouse menu |
-| `Alt + L` | Lowercase selected text |
-| `Alt + U` | UPPERCASE selected text |
-| `Alt + T` | Title Case Selected Text |
-| `Alt + S` | Zap excess spaces and tidy up line breaks |
-| `Alt + '` | "Wrap text in double quotes" |
-| `Alt + 5` | 'Wrap text in single quotes' |
-| `Alt + 9` | (Wrap text in parentheses) |
-| `Alt + [` | [Wrap text in square brackets] |
-| `Ctrl + Alt + [` | {Wrap text in curly brackets} |
+## 🎯 Usage
 
-## 🛠️ Custom Tools That Pack a Punch
+1. **Activate the Menu**: Middle mouse click or press Win+W
+2. **Use Features**: Select text (if required) and choose an option from the menu
+3. **Quick Actions**: Utilize hotkeys for instant actions without opening the menu
 
-### 🔐 Fort Knox Password Generator
-Create unbreakable passwords faster than a hacker can say "brute force"!
+## 🗝️ Key Functions
 
-### 🧮 Percentage Wizard
-Solve percentage puzzles in the blink of an eye.
+### AI Writing Assistant (ChatGPT Integration)
+Transform your writing with AI-powered features:
+- Automated grammar and spelling correction
+- Text enhancement and style improvement
+- Summarization and explanation of complex topics
+- Tone adjustment and content expansion
 
-### 💬 WhatsApp Express
-Send WhatsApp messages at the speed of thought, right from your desktop!
+### Text Manipulation
+- **Format Text**: Convert case (Alt+L/U/T) and clean formatting (Alt+S)
+- **Wrap Text**: Quickly enclose text in various brackets or quotes
 
-## 🌐 Web Superpowers
+### Web Search
+- Instant searches on Google (Alt+G), YouTube (Alt+Y), and Google Maps (Alt+M)
+- Works with or without text selection
 
-- **Unified Search**: One script to search them all (Google, YouTube, Maps, and more)!
-- **News Aggregator**: Stay ahead of the curve with multi-source news searches
-- **Social Media Sleuth**: Find content across major social platforms in one go
-- **Shopping Guru**: Compare prices across top e-commerce sites instantly
+### News Aggregation
+Access multiple news sources across categories like World News, Tech, Finance, and Science with a single click.
 
-## 🤖 AI Integration
+### Smart Shopping
+Compare product prices and details across major e-commerce platforms in various categories.
 
-Leverage the power of ChatGPT for:
-- Grammar and spelling fixes
-- Text rewrites for clarity
-- Explanation of complex concepts
-- And much more!
+### File Management
+- Bulk file and folder creation
+- Quick file content copying without opening
 
-## 🛠️ Customization
+### WhatsApp Integration
+Send WhatsApp messages directly from your desktop, even to unsaved numbers.
 
-Make this suite truly yours! Check out `OneMenu` in the script to add, remove, or modify menu items.
+## 👥 Contributing
 
-```autohotkey
-OneMenu := Menu()
-OneMenu.Add("Your Custom Function", (*) => YourFunction())
-```
-
-## 🤝 Contribute
-
-Got an idea to make this even more super? We're all ears!
-
-1. Fork it
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 💡 **Pro Tip**: Combine hotkeys for ultra-fast text manipulation. For example, `Alt+U` followed by `Alt+'` to get "UPPERCASE QUOTED TEXT"!
 
 Ready to supercharge your productivity? Let's go! 🚀
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Made with ❤️ by [Your Name/Username]
+  <br>
+  Powered by AutoHotkey
+</p>
+
+This updated README now includes the image of the OneMenu_darkv2.ahk at the top, providing a visual representation of the tool. It also features a "Quick Demo" section with a linked YouTube Shorts video thumbnail, allowing users to quickly view a demonstration of the Productivity Suite in action. These additions make the README more engaging and informative for potential users and contributors.
+---
