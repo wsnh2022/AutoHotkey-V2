@@ -1,7 +1,7 @@
 # AutoHotkey-V2
 AutoHotkey Version 2 Scripts are located here
 
-# 🚀 AutoHotkey Productivity Suite - SELECTED TEXT ACTION MENU 
+# 🚀 AHK Productivity Suite - SELECTED TEXT ACTION MENU 
 
 Supercharge your Windows workflow with this comprehensive AutoHotkey script. Designed to boost productivity and streamline daily tasks, this suite offers a range of powerful features accessible through an intuitive menu system.
 
