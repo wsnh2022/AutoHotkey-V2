@@ -29,7 +29,7 @@ Check out this short video demonstration of the Productivity Suite in action:
 1. Ensure you have [AutoHotkey v2.0+](https://www.autohotkey.com/) installed on your system.
 2. Clone this repository or download the script file:
    ```
-   git clone https://github.com/yourusername/autohotkey-productivity-suite.git
+   git clone https://github.com/wsnh2022/AutoHotkey-V2.git
    ```
 3. Double-click the `.ahk` file to run the script.
 
