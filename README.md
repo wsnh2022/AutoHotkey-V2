@@ -41,34 +41,35 @@ Check out this short video demonstration of the Productivity Suite in action:
 
 ## 🗝️ Key Functions
 
-### AI Writing Assistant (ChatGPT Integration)
+### 🤖 AI Writing Assistant (ChatGPT Integration)
 Transform your writing with AI-powered features:
-- Automated grammar and spelling correction
-- Text enhancement and style improvement
-- Summarization and explanation of complex topics
-- Tone adjustment and content expansion
+- ✍️ Automated grammar and spelling correction
+- 💎 Text enhancement and style improvement
+- 📚 Summarization and explanation of complex topics
+- 🎭 Tone adjustment and content expansion
 
-### Text Manipulation
-- **Format Text**: Convert case (Alt+L/U/T) and clean formatting (Alt+S)
-- **Wrap Text**: Quickly enclose text in various brackets or quotes
+### 📝 Text Manipulation
+- 🔠 **Format Text**: Convert case (Alt+L/U/T) and clean formatting (Alt+S)
+- 🔣 **Wrap Text**: Quickly enclose text in various brackets or quotes
 
-### Web Search
-- Instant searches on Google (Alt+G), YouTube (Alt+Y), and Google Maps (Alt+M)
-- Works with or without text selection
+### 🌐 Web Search
+- 🔍 Instant searches on Google (Alt+G), YouTube (Alt+Y), and Google Maps (Alt+M)
+- ⚡ Works with or without text selection
 
-### News Aggregation
+### 📰 News Aggregation
 Access multiple news sources across categories like World News, Tech, Finance, and Science with a single click.
 
-### Smart Shopping
+### 🛒 Smart Shopping
 Compare product prices and details across major e-commerce platforms in various categories.
 
-### File Management
-- Bulk file and folder creation
-- Quick file content copying without opening
+### 📂 File Management
+- 📁 Bulk file and folder creation
+- 📄 Quick file content copying without opening
 
-### WhatsApp Integration
+### 💬 WhatsApp Integration
 Send WhatsApp messages directly from your desktop, even to unsaved numbers.
 
+These emojis add a visual element to your menu, making it more engaging and easier to navigate at a glance. Each emoji is chosen to represent the function of its respective section.
 ## 👥 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
