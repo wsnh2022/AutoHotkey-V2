@@ -13,14 +13,6 @@ Check out this short video demonstration of the Productivity Suite in action:
 
 [![YouTube Shorts Video](https://img.youtube.com/vi/aagzxVRo4I0/0.jpg)](https://www.youtube.com/shorts/aagzxVRo4I0)
 
-## 📋 Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Key Functions](#key-functions)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## ✨ Features
 
 - 🖱️ Easily accessible menu via middle mouse click or Win+W
