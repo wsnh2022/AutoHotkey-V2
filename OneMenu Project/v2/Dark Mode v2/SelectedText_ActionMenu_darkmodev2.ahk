@@ -150,7 +150,7 @@ copy2clip() {
 bak := ClipboardAll()
 A_Clipboard := ""
 Send("^c")
-if (ClipWait(3, 1)) {
+if (ClipWait(1.2, 1)) {
     return A_Clipboard
 } else 
 ToolTip("Couldn't put text into Clipboard.",)
