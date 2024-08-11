@@ -35,7 +35,7 @@ Check out this short video demonstration of the Productivity Suite in action:
 
 ## 🎯 Usage
 
-1. **Activate the Menu**: Middle mouse click or press Win+W
+1. **Activate the Menu**: Mouse Right Click Press and hold for 500 millisecond  
 2. **Use Features**: Select text (if required) and choose an option from the menu
 3. **Quick Actions**: Utilize hotkeys for instant actions without opening the menu
 
