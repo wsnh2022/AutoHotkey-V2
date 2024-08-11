@@ -120,7 +120,7 @@ OneMenu.Add()
 
 ;;===========================================================================
 ; Hotkey to show the main menu
-#HotIf not WinActive("ahk_class CabinetWClass")
+;#HotIf not WinActive("ahk_class CabinetWClass")
 RButton:: {
     startTime := A_TickCount
     KeyWait "RButton", "T0.5"
@@ -134,7 +134,7 @@ RButton:: {
         }
     }
 }
-#HotIf
+;#HotIf
 ; #w::callmenu()
 
 
