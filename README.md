@@ -15,7 +15,7 @@ Check out this short video demonstration of the Productivity Suite in action:
 
 ## ✨ Features
 
-- 🖱️ Easily accessible menu via middle mouse click or Win+W
+- 🖱️ Easily accessible menu via mouse Right Click and hold 500 milliseconds
 - 🌐 Integrated web search capabilities
 - 🤖 AI-powered text enhancement with ChatGPT integration
 - 📊 Multi-source news aggregation
