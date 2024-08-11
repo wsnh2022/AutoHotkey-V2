@@ -1,8 +1,9 @@
-; #Warn
 #Requires AutoHotkey v2.0+
 #SingleInstance Force
+TraySetIcon A_ScriptDir "\icons\Menu.ico"
 ~!Space::Reload
-~Escape::ExitApp
+
+; ~Escape::ExitApp
 ;;========================
 global iconpath := A_ScriptDir . "\icons\"
 ; MsgBox path
@@ -38,10 +39,10 @@ google_search(){
 Runurl("https://google.com/search?q=","https://google.com/")
 }
 google_news(){
-    Runurl("https://news.google.com/search?q=", "https://news.google.com/")
+    Runurl("https://news.google.com/search?q=","https://news.google.com/")
 }
 yt_search(){
-Runurl("https://www.youtube.com/results?search_query=" , "https://www.youtube.com")
+Runurl("https://www.youtube.com/results?search_query=","https://www.youtube.com")
 }
 maps(){
 Runurl("https://www.google.com/maps/search/","https://www.google.com/maps")
@@ -119,8 +120,23 @@ OneMenu.Add()
 
 ;;===========================================================================
 ; Hotkey to show the main menu
-MButton::callmenu()
-#w::callmenu()
+#HotIf not WinActive("ahk_class CabinetWClass")
+RButton:: {
+    startTime := A_TickCount
+    KeyWait "RButton", "T0.5"
+    elapsedTime := A_TickCount - startTime
+    
+    if (elapsedTime >= 500) {
+        callmenu()  ; Replace with the actual function or script you want to call
+    } else {
+        if (A_PriorKey == "RButton") {
+            Send "{RButton}"
+        }
+    }
+}
+#HotIf
+; #w::callmenu()
+
 
 callmenu(){
 copy2clip()
@@ -141,7 +157,7 @@ OneMenu.Show()
 !5:: wrap("'", "'")    ; Alt+5: Wrap with percent signs
 !9:: wrap("(", ")")    ; Alt+9: Wrap with parentheses
 ![:: wrap("[", "]")    ; Alt+[: Wrap with square brackets
-~^![:: wrap("{U+007B}", "{U+007D}")    ; Alt+[: Wrap with Curly Brackets
+~^![:: wrap("{U+007B}", "{U+007D}")    ; Ctrl+Alt+[: Wrap with Curly Brackets
 
 copy2clip() {
 bak := ClipboardAll()
@@ -152,18 +168,7 @@ if (ClipWait(1.2, 1)) {
 } else 
 ToolTip("Couldn't put text into Clipboard.",)
 SetTimer () => ToolTip(), -5000
-; MsgBox("Couldn't put text into Clipboard.", , 0x40010)
 A_Clipboard := bak
-
-;; version 1
-; myclip() {
-;     A_Clipboard := ""  ; Clear the clipboard
-;     Send "^c"
-;     if ClipWait(1)  ; Wait for the clipboard to contain data
-;         return A_Clipboard
-;     else
-;         return ""  ; Return an empty string if the clipboard is empty or the operation timed out
-; }
 }
 ; Function to format text case (lower, UPPER, Title)
 format_text(n) {
@@ -187,8 +192,8 @@ A_Clipboard := text
 Send("^v")
 }
 ; Function to wrap selected text with specified characters
-wrap(x, y, z := Sleep(300)) {
-Send "^x" . z . x . z . "^v" . z . y
+wrap(x, y, z := 100) {
+Send "^x" . Sleep(z) . x . Sleep(z) . "^v" . Sleep(z) . y
 }
 
 ; ===>> create bulk folder by 'md foldername' using .bat file method
@@ -209,8 +214,9 @@ A_Clipboard := 'echo off`necho.>filename1.xls`necho.>hai2.txt`necho.>filename.do
 Sendw('^v', 1500)
 Sendw('^s', 1500)
 Sendw('create_bulk_new_files.bat{Tab}', 1500)
-sendw('{Down 2}{Enter}', 0)
+send('{Down 2}{Enter}')
 }
+
 sendw(key, delay:=1000, times := 1) {
 loop times {
     SendEvent key
@@ -219,14 +225,14 @@ loop times {
 }
 OpenChatGPTAndPaste(prompt) {
 if BrowserTabFinder('ChatGPT') {
-    Sleep 3000
+    Sleep 2000
     click_chatgpt_inputarea('ChatGPT')
     A_Clipboard := prompt . ' > ' . Search_text
     Send '^v' . "{Enter}"
 } else {
     Run "https://chat.openai.com/"
     WinWaitActive 'ChatGPT'
-    Sleep 3000 ; Wait for 2 seconds
+    Sleep 2000 ; Wait for 2 seconds
     A_Clipboard := prompt . ' > ' . Search_text
     Send '^v' . "{Enter}"
 }
@@ -705,7 +711,7 @@ Runurl(urlclip,url){
     ClipSaved := ClipboardAll ; Save the current clipboard content
     A_Clipboard:=""
     Send "^c" ; Copy selected text
-    ClipWait(3,1) ; timeout in 3sec and Wait for 1 sec to clipboard update
+    ClipWait(1,1) ; timeout in 3sec and Wait for 1 sec to clipboard update
     Run (A_Clipboard ? urlclip . A_Clipboard : url) ; run url with clip or run url with out clip ; Ternary operator method: IsSet(A) ? A : B
     ClipSaved := A_Clipboard
 }
@@ -749,3 +755,4 @@ FlushMenuThemes() {
     DllCall(FlushMenuThemes)
     DllCall("kernel32.dll\FreeLibrary", "ptr", hModule)
 }
+
